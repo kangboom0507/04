@@ -1,0 +1,95 @@
+
+
+.footer-area {
+    width: 100%;
+    color: #fff;
+    background: #000;
+    padding: 96px 0 38px;
+
+    .footer-addr {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 0 56px;
+        display: flex;
+
+        .foo-logo-area {
+            width: 40%;
+           
+            .logo {
+                display: inline-block;
+                width: 145px;
+                height: 70px;
+                background: url(https://images.app.goo.gl/9efGxZbYyBj4Fm88A) no-repeat;
+                object-fit: cover;
+                background-size: 50%;
+                // background-size: 145px 26px;
+            }
+            .logo-txt { 
+                color: #888; 
+                max-width: 350px;
+                margin: 16px 0;
+            }
+
+        }
+        .addr-box {
+            display: flex; 
+            flex-direction: column;
+            width: 20%; 
+
+            .top { font-weight: 600;
+                font-size: 16px;
+                margin: 0 0 20px;
+            }
+
+            .addr { 
+                margin-top: 13px;
+            }
+
+            .sns-icon { 
+                box-sizing: border-box;
+                .icon { 
+                    display: inline-block;
+                    float: left;
+                    text-align: center;
+                    line-height: 44px;
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+        }
+     }
+    .language {
+        display: flex;
+        max-width: 1440px;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 64px auto 4px;
+     }
+    .copy { 
+        padding-top: 36px;
+        position: relative;
+        margin-top: 42px;
+
+        &.copy::before { 
+            content:'';
+            width: 100%;
+            height: 1px;
+            background: #fff;
+            display: block;
+            opacity: .2;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        .copy-wrap { 
+            padding: 0 56px;
+            max-width: 1440px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+
+            
+        }
+    }
+}

@@ -1,0 +1,44 @@
+
+
+
+.blind{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin: -1px;    
+    clip:rect(0,0,0,0);
+}
+
+body{
+    
+        font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif; 
+}
+
+.img-scroll{
+    overflow: hidden;
+    img{
+        height: 120%;
+        object-fit: cover;
+
+    }
+}
+
+
+.chk-btn { 
+    position: relative;
+    label{
+        width: 20px;height: 20px;
+        background: #f00;
+        display: inline-block;
+        &.active { 
+            background: #00f;
+        }
+    }
+    input{
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
